@@ -1,7 +1,7 @@
 # cucm_partition_index_pusher
 This script inserts a Route Partition in a desired index within the specified Calling Search Space for CallManager
 
-# Setup
+## Setup
 
 Clone this repository in your environment:
 ```
@@ -13,7 +13,7 @@ Install the *argparse* library in your virtual environment:
 pip install argparse
 ```
 
-# Execution
+## Execution
 
 The execution script is *init.py*. Provide the following information in the inline invocation according to the following documentation:
 ```
