@@ -8,11 +8,6 @@ __status__ = "Production"
 
 Holder class for the different AXL operations for updating the desired CSS
 """
-
-from re import X
-from typing import Dict
-
-from zeep.xsd.types.builtins import Boolean
 from CUCMConnectorAXL import *
 
 class CUCMOperator:
@@ -33,7 +28,7 @@ class CUCMOperator:
             Dict with the partitions within the specified CSS
             False, if Exception is raised
     """
-    def get_css_partitions(self,CSS_NAME) -> Dict:
+    def get_css_partitions(self,CSS_NAME):
         pt_dic_filtered = {}
         try:            
             response = self._AXL_OPERATOR.getCss(
@@ -61,7 +56,7 @@ class CUCMOperator:
             True, if operation is completed successfully
             False, if Exception is raised
     """
-    def update_css_partitions(self,CSS_NAME,PT_LIST) -> Boolean:
+    def update_css_partitions(self,CSS_NAME,PT_LIST):
         result = True
         try:
             self._AXL_OPERATOR.updateCss(
