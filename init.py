@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "Alfonso Sandoval"
-__copyright__ = "HCA Healthcare, 2021"
 __version__ = "1.0.1"
 __maintainer__ = "Alfonso Sandoval"
-__email__ = "alfsando@cisco.com"
 __status__ = "Production"
 
 """UCM Partition Insertion -> Execution script
